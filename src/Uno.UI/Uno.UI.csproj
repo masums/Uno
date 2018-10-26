@@ -188,6 +188,10 @@
 			<Version>27.0.2.1</Version>
 			<PrivateAssets>none</PrivateAssets>
 		</PackageReference>
+		<PackageReference Include="Xamarin.Android.Support.Fragment">
+			<Version>27.0.2.1</Version>
+			<PrivateAssets>none</PrivateAssets>
+		</PackageReference>
 	</ItemGroup>
 
 	<ItemGroup>
