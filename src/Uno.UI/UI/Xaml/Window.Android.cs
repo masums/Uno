@@ -78,6 +78,11 @@ namespace Windows.UI.Xaml
 			var statusBarHeight = GetLogicalStatusBarHeight();
 			var navigationBarHeight = GetLogicalNavigationBarHeight();
 
+#if __ANDROID_28__
+
+#endif
+
+
 			var newVisibleBounds = new Rect(
 				x: newBounds.X,
 				y: newBounds.Y + statusBarHeight,
