@@ -614,7 +614,7 @@
 		public setImageRawData(viewId: string, dataPtr: number, width: number, height: number): string {
 			const element = this.allActiveElementsById[viewId] as HTMLElement;
 			if (!element) {
-				throw `setPointerCapture: Element id ${viewId} not found.`;
+				throw `setImageRawData: Element id ${viewId} not found.`;
 			}
 
 			if (element.tagName.toUpperCase() === "IMG") {
