@@ -79,9 +79,19 @@ namespace Windows.UI.Xaml
 			var navigationBarHeight = GetLogicalNavigationBarHeight();
 
 #if __ANDROID_28__
+			var activity = ContextHelper.Current as Activity;
+			var cutoutMode = activity.Window.Attributes.LayoutInDisplayCutoutMode;
 
+			switch (cutoutMode)
+			{
+				case LayoutInDisplayCutoutMode.Default:
+					break;
+				case LayoutInDisplayCutoutMode.Never:
+					break;
+				case LayoutInDisplayCutoutMode.ShortEdges:
+					break;
+			}
 #endif
-
 
 			var newVisibleBounds = new Rect(
 				x: newBounds.X,
