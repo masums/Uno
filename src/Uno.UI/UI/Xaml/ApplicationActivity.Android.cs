@@ -61,6 +61,9 @@ namespace Windows.UI.Xaml
 				// using either SoftInput.AdjustResize or SoftInput.AdjustPan.
 				args.EnsuredFocusedElementInView = true;
 			}
+
+			// This handle when the soft bar is showed / hidden on some devices and recalculate bounds
+			RaiseConfigurationChanges();
 		}
 
 		/// <summary>
