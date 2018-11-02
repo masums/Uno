@@ -37,3 +37,4 @@
  * Fix Android and iOS may fail to break on breakpoints in `.xaml.cs` if the debugging symbol type is Full in projects created from templates
  * 136210 [Android] Path is cut off by a pixel
  * 132004 [Android] Window bounds incorrect for screen with rounded corners
+ * 136188 [Android] Page elements are aligned differently upon back navigation
