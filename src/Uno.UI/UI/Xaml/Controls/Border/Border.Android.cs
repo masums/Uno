@@ -102,7 +102,7 @@ namespace Windows.UI.Xaml.Controls
 
         partial void OnPaddingChangedPartial(Thickness oldValue, Thickness newValue)
         {
-            UpdateBorder(true);
+            UpdateBorder(oldValue != newValue);
         }
 
         partial void OnCornerRadiusUpdatedPartial(CornerRadius oldValue, CornerRadius newValue)

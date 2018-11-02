@@ -69,7 +69,7 @@ namespace Windows.UI.Xaml.Controls
 		{
 			base.OnLayoutCore(changed, left, top, right, bottom);
 
-			UpdateBorder();
+			UpdateBorder(changed);
 		}
 
 		protected virtual void OnChildrenChanged()
@@ -79,7 +79,7 @@ namespace Windows.UI.Xaml.Controls
 
 		partial void OnPaddingChangedPartial(Thickness oldValue, Thickness newValue)
 		{
-			UpdateBorder(true);
+			UpdateBorder(oldValue != newValue);
 		}
 
 		partial void OnBorderBrushChangedPartial(Brush oldValue, Brush newValue)
